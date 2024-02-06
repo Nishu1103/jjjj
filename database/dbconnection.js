@@ -11,11 +11,6 @@ const dbConnection = async () => {
     } catch (err) {
         console.error("MongoDB connection failed:", err);
     }
-    dbConnection().then(() => {
-        app.listen(PORT, () => {
-            console.log("listening for requests");
-        })
-    })
 };
 export default dbConnection;
  
